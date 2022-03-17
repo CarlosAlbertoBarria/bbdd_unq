@@ -1,0 +1,18 @@
+Practica 1-
+Ejercicio5. 9- "Hinchas de Brasil 2014".
+
+Pasaje de MER a MR.
+
+
+PARTIDO<IDPartido(PK), nombre(FK), PasaporteArbitro(FK), instancia, duracion, (fecha_hora, fecha_dia), capacidadHabilitada, cantidadPolicia>
+ARBITRO<pasaporteArbitro(PK), nacionalidad, añoInicioActividad, nyApArbitro>
+EQUIPO<nombreSeleccion(PK), nombreDT, LugarEntrenamiento, {miembroEqTecnico}>
+JUGADOR<NroCamiseta(PK), nombreSeleccion(PK, FK), posicion, nyAp, apodo> 
+ESTADIO<nombre(PK), ciudad, capacidadMaxima>
+HINCHA<nroTicket(PK), vestimenta, (ubicacion_zona, ubicacion_fila, ubicacion_nroAsiento)>
+ASISTE<llegaEn(PK), nroTicket(PK, FK), nombre(PK, FK)>
+JUEGA<IDPartido(PK, FK), nombreSeleccion(PK, FK)>
+REEMPLAZA<pasaporteArbitro_puede_ser_reemplazado_por(PK,FK), pasaporteArbitro_reemplaza_a(FK)>
+
+
+

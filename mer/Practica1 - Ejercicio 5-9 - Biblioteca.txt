@@ -1,0 +1,20 @@
+Ejercicio 5. 9 - "Biblioteca".
+
+Pasaje de MER a MR.
+
+AUTOR<nombre(PK),nacionalidad, añoNacimiento>
+LIBRO<titulo(PK), genero, {(reseñas_texto, reseñas_fecha, reseñas_revista)}>
+EDICION<ISBN(PK), titulo(FK), año, idioma>
+COPIA<numero(PK), ISBN(PK, FK)>
+USUARIO<DNI(PK), email, nombre, apellido>
+PIDE PRESTAMO<numero(PK, FK), DNI(PK, FK), fechaPrstmo, fechaDev>
+REFERENCIA<titulo_se_refiere(PK, FK), titulo_es_referido(PK,FK)>
+ESCRIBE<nombre(PK, FK), titulo(PK,FK)>
+
+
+A) En caso de que Autor fuera atributo de Libro el problema seria que al ser consultado en la BD se modificarían todos los Libros escritos por el Autor.
+
+B) Lo representaría con una relación recursiva.
+
+C) La diferencia es que la relación Tiene está representada dentro la tabla de la entidad Edición y la relación Escribe se representa
+como una nueva tabla con las PKs de las entidades que esta relaciona, como PK y FK.
