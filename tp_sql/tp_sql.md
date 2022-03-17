@@ -1,7 +1,7 @@
 Se muestra lo trabajado en el trabajo práctico de SQL de la materia BBDD de la Universidad Nacional de Quilmes.
 Falta corregir consultas según correción del profesor de la materia:
 
-"La preguntnta 6: no chequeas que sean sandalias, y abusas de subconsultas para la solucion.
+"La pregunta 6: no chequeas que sean sandalias, y abusas de subconsultas para la solucion.
 
 En la 7 esta mal la condición de las tiendas que vendan trajes, debes buscar los q venda traje pero no corbatas
 Que sentido tiene buscar q ventas trajes o corbatas para luego restarle las q vendan corbatas, no?
