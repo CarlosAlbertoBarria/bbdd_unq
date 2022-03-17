@@ -15,3 +15,7 @@ Y no aseguras que sea sept del 2020"
 
 
 NOTA DEL TRABAJO: 6.
+
+==================================
+
+Las consultas deben ser corregidas
