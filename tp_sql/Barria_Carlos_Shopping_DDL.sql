@@ -542,6 +542,26 @@ UPDATE empleado
 SET inf_medica = 7
 WHERE id = 16 	     
 ;
+--para las consultas antes realizadas, es posible realizalas mediante sentencia SET local = CASE ... END 
+--mejorando la eficiencia, reduciendo cantidad de consultas al servidor y tiempo de ejecución
+--aunque se decidió utilizar consultas individuales para asegurarnos la carga de cada uno de los datos y se muestre en código
+--la utilización de consultas de actualización
+
+--UPDATE tienda
+--SET local = CASE 
+--   WHEN id = 1 THEN 1
+--    WHEN id = 2 THEN 3
+--    WHEN id = 3 THEN 2
+--    WHEN id = 4 THEN 4
+--    WHEN id = 5 THEN 7
+--    WHEN id = 6 THEN 6
+--    WHEN id = 7 THEN 5
+--    WHEN id = 8 THEN 1
+--    WHEN id = 9 THEN 8
+--    ELSE local  -- Esto garantiza que los demás registros no cambien
+--END
+--WHERE id IN (1, 2, 3, 4, 5, 6, 7, 8, 9);
+
 
 --inserté de datos de tabla producto, con valores cargados en base a obtener resultados en cada una de las consultas realizadas en el archivo DML
 
