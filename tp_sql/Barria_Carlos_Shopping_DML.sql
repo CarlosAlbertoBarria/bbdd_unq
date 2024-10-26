@@ -12,6 +12,17 @@ JOIN empleado
 ON id_inf_medica = inf_medica
 ;
 
+-- debido a que la utilización de subconsultas hace menos legible el código y perjudican el rendimiento del motor
+-- de bases de datos y el mantenimiento, se corrige la consulta de la siguiente forma:
+
+--SELECT e.id, e.nombre, e.telefono 
+--FROM empleado AS e
+--JOIN informacion_medica AS i ON e.inf_medica = i.id
+--WHERE i.contacto_emergencia IS NULL 
+--   OR i.contacto_emergencia = 'cargar@despues.com';
+
+-- de esta manera se trabaja directamente entre tablas empleado e informacion_medica uniendolas con JOIN y condicionandolas 
+-- mediante una simple sentencia WHERE
 
 
 --2)
